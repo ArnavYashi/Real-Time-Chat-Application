@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    <title>iChat - Realtime Node Socket.io Chat App</title>
+    <script defer src="http://localhost:8001/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <img src="chat.png" alt="" class="logo">
+        <h1>Welcome to iDiscuss Chat App</h1>
+    </nav>
+    <div class="container">
+        <!-- <div class="message right">Harry: Hey how are you?</div> -->
+        <!-- <div class="message left">Rohan: Bhai I am fine. How about you</div> -->
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp">
+            <span class="image">
+                <img src="/image.png" alt="Image" onclick="ChooseImage()">
+                <input type="file" id="imageFile" onchange="SendImage(this)" accept="image/*" style="display: none;">
+            </span>
+            <button class="btn" type="submit">Send</button>
+
+        </form>
+    </div>
+</body>
+<script defer src="js/client.js"></script>
+
+</html>
